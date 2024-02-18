@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style type="text/css">
+        body {
+            size: 100%;
+            background-color: antiquewhite;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        head {
+            height: 170px;
+            background-color: white;
+            border-style: solid;
+            border-width: 1%;
+        }
+        li {
+            font-size:x-large;
+            text-align:center;
+            color:whitesmoke;
+            margin-right: 10%;
+        }
+        ul {
+            padding:20px;
+            border:groove;
+            border-radius: 7px;
+            background-color: whitesmoke;
+            width:70%;
+            font-size:large;
+            margin-left: 10%;
+            margin-bottom: 2%;
+
+            border-color:darkolivegreen;
+
+        }
+        td {
+            padding: 7px;
+            border-radius:7px;
+            border-style:groove;
+            border-width: 1px;
+            text-align:center;
+            background-color: whitesmoke;
+        }
+        #linklijst {
+            padding-top: 40px;
+            width: auto;
+            min-height: 100vh;
+            background-color: rgb(34, 158, 88);
+            float:left; 
+            align-items:center;
+            text-align: center;
+        }
+
+        .custom-select {
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        #paginatop {
+            height: auto;
+            background-color: rgb(34, 158, 88);
+            text-align: center;
+            top:0;
+            margin:0px;
+            vertical-align: middle;
+            padding: 10px;
+        }
+
+        #main {
+            float:left;
+            background-color: rgb(34, 158, 88);
+            min-height:100vh;
+            width: auto;
+            background-color: antiquewhite;
+            display:flex;
+            flex-direction:row;
+        }
+
+        #uitgelicht {
+            text-align: center;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: antiquewhite;
+            margin-top:30px;
+            margin-bottom:50px;
+        }
+
+        #recept {
+            align-items: center;
+            padding-left: 0%;
+            width:auto;
+            height:auto;
+            display:flex;
+            justify-content:space-evenly;
+        }
+
+        #ingredienten {
+            text-align:left;
+            border:groove;
+            padding:20px;
+            background-color: white;
+        }
+        #bereidingswijze {
+            text-align:left;
+            width:20%;
+            border: groove;
+            border-radius: 7px;
+            border-width: 1px;
+            padding-left : 50px;
+            padding-right: 50px;
+            background-color: white;
+        }
+
+        #table {
+            padding:20px;
+        }
+    </style>
+       
+    <head>
+
+    </head>
+    <body>
+        <div id="paginatop">
+            <h1>Receptenwebsite van Eelco Honingh</h1>
+        </div>
+        <div id="main">
+            <div id="linklijst">
+                <li>
+                    <div>Links</div>
+
+                    <ul><a href="file:///C:/Users/eelco/Documents/YoungCapital%20Next/index.html">Home</a></ul>
+                    <ul><a href="file:///C:/Users/eelco/Documents/YoungCapital%20Next/index.html">Vleesgerechten</a></ul>
+                    <ul><a href="file:///C:/Users/eelco/Documents/YoungCapital%20Next/index.html">Visgerechten</a></ul>
+                    <ul><a href="file:///C:/Users/eelco/Documents/YoungCapital%20Next/index.html">Groentegerechten</a></ul>
+                </li>
+                <div class="custom-select" style="width:200px;">
+                    <select>
+                    <option value="0">Select pagina</option>
+                    <option value="1">Home</option>
+                    <option value="2">Vleesgerechten</option>
+                    <option value="3">Visgerechten</option>
+                    <option value="4">Groentegerechten</option>
+                    </select>
+                </div>
+                <br>
+                <button type="button">Go to page</button>
+            </div>  
+            <div id="uitgelicht"><h2>Uitgelicht</h2>
+                <hr>
+                <h3>Boerenkool met Worst</h3><br>
+                <img src="images/boerenkool-echte-worst-500.jpg" margin="20px"><br>
+                <hr>
+                <div id="recept">
+                    <div id="ingredienten">
+                        Ingrediënten:<br>
+                        <hr>
+                            <Table id="table">
+                                <tr>
+                                    <td>Boerenkool</td>
+                                    <td>400 gram</td>
+                                </tr>
+                                <tr>
+                                    <td>Kruimige aardappelen</td><td>1000 gram</td></tr>
+                                <tr>
+                                    <td>Boter</td>
+                                    <td>50 gram</td>
+                                </tr>
+                                <tr>
+                                    <td>Melk</td>
+                                    <td>50 gram</td>
+                                </tr>
+                                <tr>
+                                    <td>Rookworst</td>
+                                    <td>400 gram</td>
+                                </tr>
+                                <tr>
+                                    <td>Smeltjus</td>
+                                    <td>400 gram</td>
+                                </tr>
+                                <tr>
+                                    <td>Grote pan</td>
+                                    <td>400 gram</td>
+                                </tr>
+                                <tr>
+                                    <td>Steelpannetje</td>
+                                    <td>400 gram</td>
+                                </tr>
+
+                            </Table>
+                    </div>
+                    <div id="bereidingswijze">
+                        <p><h3>Bereidingswijze:</h3>
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. 
+                            Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. 
+                            Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
